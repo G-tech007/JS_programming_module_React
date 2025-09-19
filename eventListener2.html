@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Event Listener 2</title>
+</head>
+<style>
+    div{
+        background-color: lightcoral;
+        width: 40%;
+        float: left;
+        padding: 50px 0px;
+    }
+    p{
+        background-color: blueviolet;
+        color: beige;
+        /* float: left; */
+        padding: 10px 0px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="div">
+        <p id="para">Paragraph</p>
+    </div>
+
+    <script>
+        function div_fun()
+            {
+                alert("Div is Clicked...!")
+            }
+
+        function para_fun()
+            {
+                alert("Paragraph is Clicked...!")
+            }
+
+        document.getElementById("div").addEventListener("click",div_fun,true)
+        document.getElementById("para").addEventListener("click",para_fun,true)
+    </script>
+</body>
+</html>

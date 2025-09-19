@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - String Functions</title>
+</head>
+<body>
+    <script>
+        var str=" This is a String "
+
+        // length
+        var strlen=str.length
+        document.write(strlen+"<br>")
+
+        // for remove the white space from starting and ending
+        var str_trim=str.trim()
+        document.write(str_trim+"<br>")
+        document.write(str_trim.length+"<br>")
+
+        // charAt
+        var str="This is a String"
+        var pos=str.charAt(10)
+        document.write(pos+"<br>")
+
+        // charCodeAt
+        var str="This is a String"
+        var pos=str.charCodeAt(5)
+        document.write(pos+"<br>")
+
+        // fromCharCode
+        var res=String.fromCharCode(90,33,67,45)
+        document.write(res+"<br>")
+
+        // concat
+        var str="This is a String"
+        var str1="Hello World...!"
+        var str2="How are you...?"
+        var res=str.concat(" ",str1," ",str2)
+        document.write(res+"<br>")
+
+        // ends with
+        var str="This is a String"
+        var res=str.endsWith("g")
+        // var res=str.endsWith("String")
+        // var res=str.endsWith("is",7)
+        document.write(res+"<br>")
+
+        // starts with
+        var str="This is a String"
+        var res=str.startsWith("T")
+        // var res=str.startsWith("This")
+        // var res=str.startsWith("String",10)
+        document.write(res+"<br>")
+
+        // indexOf
+        var str="This is a String"
+        var res=str.indexOf("s")
+        document.write(res+"<br>")
+
+        // lastIndexOf
+        var str="This is a String"
+        var res=str.lastIndexOf("s")
+        document.write(res+"<br>")
+
+        // includes
+        var str="This is a String"
+        var res=str.includes("x")
+        var res1=str.includes("Str")
+        document.write(res+"<br>")
+        document.write(res1+"<br>")
+
+        // repeat
+        var str="This is a String"
+        var res=str.repeat(4)
+        document.write(res+"<br>")
+
+        // match  gi---global insensitive check means check all character small as well as capital... g--global means only small character
+        var str="This is a String_12@%&3"
+        var res=str.match(/s/gi)   
+        document.write(res+"<br>")
+
+        // replace
+        var str="This is a String string"
+        // var res=str.replace("String","World!")
+        // var res=str.replace(/String/g,"World!")
+        var res=str.replace(/String/gi,"World!")
+        document.write(res+"<br>")
+
+        // search -- take more time to search index as compare to indexOf
+        var str="This is a String"
+        var res=str.search("s")
+        document.write(res+"<br>")
+
+        // slice
+        var str="This is a String"
+        // var res=str.slice(2,6)
+        // var res=slice(-8,-1)
+        // var res=slice(0,11)
+        // var res=slice(0,1)
+        // var res=slice(-1)
+        var res=str.slice(5)
+        document.write(res+"<br>")
+
+        // split
+        var str="This is a String"
+        var res=str.split('')
+        // var res=str.split(' ')
+        // var res=str.split('s')
+        document.write(res+"<br>")
+        document.write(res[0]+"<br>")
+        document.write(res[1]+"<br>")
+
+        // uppercase lowercase
+        var str="This is a String"
+        var res=str.toUpperCase()
+        // var res=str.toLowerCase()
+        document.write(res+"<br>")
+    </script>
+</body>
+</html>

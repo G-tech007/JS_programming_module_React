@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+</head>
+<body>
+    <script>
+        // var arr1=['one','two','three']
+        // var arr2=['four','five','six']
+        // var arr3=['seven']
+
+        // var res=arr1.concat(arr2,arr3)
+        // document.write(res+"<br>")
+
+        // //unshift - adds new values to the beginning of an array and returns the new length
+        // var arr1=['one','two','three']
+        // var res=arr1.unshift('newvalue1','newvalue2')
+        // document.write(res+"<br>") // returns the new length of array
+        // document.write(arr1+"<br>")
+
+        // //shift - removes the first value from an array and returns the removed element
+        // var arr1=['one','two','three']
+        // var res=arr1.shift()
+        // document.write(res+"<br>") //returns the removed element
+        // document.write(arr1+"<br>")
+
+        // //push - add new values to the ending of an array and returns the new length
+        // var arr1=['one','two','three']
+        // var res=arr1.push('newvalue1','newvalue2')
+        // document.write(res+"<br>")
+        // document.write(arr1+"<br>")
+
+        // //pop - remove the last value from an array and returns the removed element
+        // var arr1=['one','two','three']
+        // var res=arr1.pop()
+        // document.write(res+"<br>")
+        // document.write(arr1+"<br>")
+
+        //splice - adds and/or removes array values from the specific index
+        // var arr1=['one','two','three','four']
+        // // arr1.splice(1,2,'new1','new2')
+        // // arr1.splice(1,0,'new1','new2','new3')
+        // arr1.splice(1,2)
+        // document.write(arr1+"<br>")
+
+        //to string
+        // var arr1=['one','two','three',1001]
+        // document.write(typeof arr1+"<br>")
+
+        // var res=arr1.toString()
+        // document.write(res+"<br>")
+        // document.write(res[4]+"<br>")
+        // document.write(typeof res+"<br>")
+
+        // //join - returns an array as a string. Here we can set a separator
+        // var arr1=['one','two','three']
+        // var str=arr1.join('^')
+        // document.write(str+"<br>")
+        // document.write(typeof str+"<br>")
+
+        //reverse
+        // var arr1=['one','two','three',"xYZ"]
+        // arr1.reverse()
+        // document.write(arr1+"<br>")
+
+        // //sort
+        // var arr1=['one','two','three','xYZ','santya','shreeram']
+        // arr1.sort()
+        // document.write(arr1+"<br>")
+
+        // arr1.reverse()
+        // document.write(arr1+"<br>")
+
+        //isArray
+        // var arr='abc'
+        // var arr2=['nancy',101]
+        //         //Array-class //isArray-function
+        // document.write(Array.isArray(arr2)+"<br>")
+
+        //for each 
+        // var arr=['Python','PHP','Java']
+        //         //a-key //b-value
+        // function test(a,b)
+        // {
+        //     document.write(b+":"+a+"<br>")
+        // }
+        // arr.forEach(test)
+
+        //some
+        // var arr=[4,10,60,70]
+        // function test(val)
+        // {
+        //     return val>60
+        // }
+        // document.write(arr.some(test)+"<br>")
+
+        //findindex
+        // var arr=[2,10,6,9]
+        // function test(val)
+        // {
+        //     return val>6
+        // }
+        // document.writeln(arr.findIndex(test)+"<br>")
+
+        //find
+        // var arr=[8,10,6,9]
+        // function test(val)
+        // {
+        //     return val>8
+        // }
+        // document.write(arr.find(test)+"<br>")
+
+        //filter
+        // var arr=[8,10,6,9]
+        // function test(val)
+        // {
+        //     return val>8
+        // }
+        // document.write(arr.filter(test)+"<br>")
+
+        //object in js
+
+        var stu_details_new={roll_no:10,stu_name:'john',stu_email:'johnyyaaa@gmail.com'}
+        document.write(stu_details_new+"<br>")
+        document.write(typeof stu_details_new+"<br>")
+
+        document.write(stu_details_new['roll_no']+"<br>")
+        document.write(stu_details_new['stu_name']+"<br>")
+
+        for (x in stu_details_new)
+        {
+          document.write(stu_details_new[x]+"<br>")  
+        }
+    </script>
+</body>
+</html>

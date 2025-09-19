@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="../CSS/css/all.min.css">
+</head>
+<body>
+    <input type="password" id="pass">
+    <i class="far fa-eye" id="eye_icon" onclick="hideShowPassword()"></i>
+
+    <script>
+        function hideShowPassword() 
+        {
+            var type_input=document.getElementById("pass").type 
+            var eye_icon=document.getElementById("eye_icon")
+            if(type_input=="password")
+            {
+                document.getElementById("pass").type="text"
+                eye_icon.classList.remove("fa-eye")
+                eye_icon.classList.add("fa-eye-slash")
+            }
+            else
+            {
+                document.getElementById("pass").type="password"
+                eye_icon.classList.remove("fa-eye-slash")
+                eye_icon.classList.add("fa-eye")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Form Validation</title>
+</head>
+<body>
+    <form method="post" onsubmit="return formvalidation()">
+        <table align="center">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="uname" id="uname" onblur="checkUsername()"></td>
+                <td><span id="msg1"></span></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pass" id="pass" onblur="checkPassword()"></td>
+                <td><span id="msg2"></span></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="cpass" id="cpass" onblur="checkConfirmPassword()"></td>
+                <td><span id="msg3"></span></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select id="cntry" onblur="checkCountry()">
+                        <option value="0">Select Country</option>
+                        <option value="1">India</option>
+                        <option value="2">Usa</option>
+                        <option value="3">Germany</option>
+                    </select>
+                </td>
+                <td><span id="msg4"></span></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gen" id="gen1">Maal
+                    <input type="radio" name="gen" id="gen2">Fhi--Maal
+                </td>
+                <td><span id="msg5"></span></td>
+            </tr>
+            <tr>
+                <td>Photo:</td>
+                <td><input type="file" name="photo" id="photo" onchange="fileValidation()"></td>
+                <td><span id="msg6"></span></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function formvalidation() 
+        {
+            var uname=document.getElementById("uname").value 
+            var pwd=document.getElementById("pass").value
+            var cpwd=document.getElementById("cpass").value 
+            var cntry=document.getElementById("cntry").value
+            var gen1=document.getElementById("gen1").checked 
+            var gen2=document.getElementById("gen2").checked
+
+            if(uname=="")
+            {
+              document.getElementById("msg1").innerHTML="Please Enter Username!"
+              document.getElementById("msg1").style.color="red"
+              return false
+            }
+            if(pwd=="")
+            {
+            document.getElementById("msg2").innerHTML="Please Enter Password!"
+            document.getElementById("msg2").style.color="red"
+            return false
+            }
+            if(pwd.length<4 || pwd.length>8 )
+            {
+            document.getElementById("msg2").innerHTML="Please Enter Password Between 4 to 8 Characters!"
+            document.getElementById("msg2").style.color="red"
+            return false
+            }
+            if(pwd!=cpwd)
+            {
+            document.getElementById("msg3").innerHTML="Please Enter Same Password and Confirm Password!"
+            document.getElementById("msg3").style.color="red"
+            return false
+            }
+            if(cntry=="0")
+            {
+            document.getElementById("msg4").innerHTML="Please select Your Country!"
+            document.getElementById("msg4").style.color="red"
+            return false
+            }
+            if(gen1==false && gen2==false)
+            {
+            document.getElementById("msg5").innerHTML="Please select Your Gender!"
+            document.getElementById("msg5").style.color="red"
+            return false
+            }
+        }
+        function fileValidation() 
+            {
+                var filename=document.getElementById("photo").value
+                alert(filename)
+                var ext=filename.lastIndexOf(".")
+                alert(ext)
+                var final_ext=filename.substring(ext)
+                alert(final_ext)
+                
+                if(final_ext==".jpg" || final_ext==".jpeg" || final_ext==".png")
+                {
+                  document.getElementById("msg6").innerHTML=""
+                  document.getElementById("btn").disabled=false  
+                }
+                else
+                {
+                    document.getElementById("msg6").innerHTML="Select only png or jpg file!"
+                    document.getElementById("msg6").style.color="red"
+                    document.getElementById("btn").disabled=true
+                }
+            }
+
+        function checkUsername()
+            {
+                document.getElementById("msg1").innerHTML="Username Is Empty...!"
+                document.getElementById("msg1").style.color="red"
+            }
+        
+        function checkPassword()
+            {
+                document.getElementById("msg2").innerHTML="Please enter the Password...!"
+                document.getElementById("msg2").style.color="red"
+            }
+
+        function checkConfirmPassword()
+            {
+                document.getElementById("msg3").innerHTML="Please enter the Confirm Password...!"
+                document.getElementById("msg3").style.color="red"
+            }
+
+        function checkCountry()
+            {
+                document.getElementById("msg4").innerHTML="Please select your Country...!"
+                document.getElementById("msg4").style.color="red"
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Range Slider</title>
+</head>
+<body>
+  <div class="slider-container">
+    <input type="range" id="priceRange" min="1000" max="10000" step="1" value="1000" oninput="updatePrice()"/>
+    <div class="price-display">
+      <div>Min: 1000</div>
+      <div>Max: <span id="priceValue">10000</span></div>
+    </div>
+  </div>
+
+  <script>
+    function updatePrice() 
+    {
+      var value=document.getElementById("priceRange").value
+      document.getElementById("priceValue").innerHTML=value
+    }
+  </script>
+</body>
+</html>
+

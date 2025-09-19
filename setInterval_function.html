@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Set Interval Function</title>
+</head>
+<body>
+    <button onclick="startSample()">Start</button>
+    <button onclick="stopSample()">stop</button>
+    <script>
+        function sample()
+            {
+                window.alert("Example Of setInterval")
+            }
+
+        var x
+        function startSample()
+            {
+                x=setInterval(sample,3000)
+            }
+
+        function stopSample()
+            {
+                clearInterval(x)
+            }
+    </script>
+</body>
+</html>

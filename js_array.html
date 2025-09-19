@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Array</title>
+</head>
+<body>
+    <script>
+        var stu_details=[1,'Alice','alice@gmail.com',1234567890,true]
+        document.write(stu_details+"<br>") //print the whole array
+        document.write(typeof stu_details+"<br>")
+        
+        document.write(stu_details[0]+"<br>")
+        document.write(stu_details[1]+"<br>")
+        document.write(stu_details[4]+"<br>")
+
+        //to update the value of specific index
+        stu_details[0]=2
+        document.write(stu_details+"<br>")
+
+        stu_details[5]='New Value'
+        document.write(stu_details+"<br>")
+
+        document.write(stu_details[6]+"<br>")
+
+        stu_details[7]='New Value 1'
+        document.write(stu_details+"<br>")
+
+        //to print the length of an array 
+        var arr_len=stu_details.length
+        document.write(arr_len+"<br>")
+
+        //print array using loop
+        for(var x=0;x<=arr_len-1;x++)
+        {
+            document.write(stu_details[x]+"<br>")
+        }
+
+        // create an array using object method
+        var empDetails=new Array(101,'Nancy','nancy@gmail.com',100000,'Manager')
+        document.write(empDetails+"<br>")
+        document.write(typeof empDetails+"<br>")
+        document.write(empDetails[0]+"<br>")
+    </script>
+</body>
+</html>

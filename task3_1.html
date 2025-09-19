@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range Slider</title>
+</head>
+<body>
+  <input type="range" id="rng" min="1000" max="10000" oninput="sample()"><br>
+  <span>1000</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span id="max_val">10000
+    <script>
+      function sample()
+      {
+        var val=document.getElementById("rng").value 
+        document.getElementById("max_val").innerHTML=val
+      }
+    </script>
+  </span>
+</body>
+</html>

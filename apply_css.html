@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Apply CSS</title>
+</head>
+<body>
+    <button onclick="applyCSS()">Apply CSS</button>
+    <p id="para">This is a Paragraph</p>
+
+    <script>
+        function applyCSS()
+        {
+            var para_tag=document.getElementById("para")
+            para_tag.style.fontSize="20px"
+            para_tag.style.color="yellow"
+            para_tag.style.backgroundColor="red"
+        }
+    </script>
+</body>
+</html>

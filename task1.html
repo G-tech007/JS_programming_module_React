@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Selector</title>
+</head>
+<body>
+    <select name="" id="date_drp">
+        <option>Select Date</option>
+    </select>
+    <select name="" id="month_drp">
+        <option>Select Month</option>
+    </select>
+    <select name="" id="year_drp">
+        <option>Select Year</option>
+    </select>
+
+    <script>
+        var d=1
+        while(d<=31)
+        {
+            document.getElementById("date_drp").innerHTML+="<option>"+d+"</option>"
+            d++
+        }
+        var m=1
+        while(m<=12)
+        {
+            document.getElementById("month_drp").innerHTML+="<option>"+m+"</option>"
+            m++
+        }
+        var y=1960
+        while(y<=2025)
+        {
+            document.getElementById("year_drp").innerHTML+="<option>"+y+"</option>"
+            y++
+        }
+    </script>
+</body>
+</html>

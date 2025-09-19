@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Switch Case</title>
+</head>
+<body>
+    <script>
+        var grade='B'
+
+        switch(grade)
+        {
+            case 'A':
+                document.write("Distinction."+"<br>")
+                break
+
+            case 'B':
+                document.write("First Class."+"<br>")
+                break
+
+            case 'C':
+                document.write("Pass."+"<br>")
+                break
+
+            default:
+                document.write("Fail."+"<br>")
+                break
+        }
+
+        var operator='+'
+        var num1=10 
+        var num2=20
+
+        switch(operator)
+        {
+            case '+':
+                var add=num1+num2
+                document.write("Addition is: "+add+"<br>")
+                break
+
+            case '-':
+                var sub=num1-num2
+                document.write("Substraction is: "+sub+"<br>")
+                break
+
+            case '*':
+                var mul=num1*num2
+                document.write("Multiplication is: "+mul+"<br>")
+                break
+
+            case '/':
+                var div=num1/num2
+                document.write("Division is: "+div+"<br>")
+                break
+
+            default:
+                document.write("No operator is found.")
+                break
+        }
+    </script>
+</body>
+</html>

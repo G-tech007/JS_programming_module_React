@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Class</title>
+    <style>
+        .test{
+            font-size: 20px;
+        }
+        .sample{
+            color: red;
+        }
+        .demo
+        {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="jsclass()">Click</button>
+    <h2 id="heading2">JS - Class</h2>
+    <p id="para" class="test demo">This is a paragraph.</p>
+    <span id="span1">This is a Span Tag</span>
+    <script>
+        function jsclass()
+        {
+            document.getElementById("heading2").classList.add("demo")
+            document.getElementById("heading2").classList.add("sample")
+
+            document.getElementById("para").classList.remove("test")
+            document.getElementById("span1").classList.toggle("demo")
+        }
+    </script>
+</body>
+</html>

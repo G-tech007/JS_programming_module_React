@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - String</title>
+</head>
+<body>
+    <script>
+        var str1="This is a String"
+        document.write(str1+"<br>")
+        document.write(typeof str1+"<br>")
+
+        var str2='This is a String'
+        document.write(str2+"<br>")
+        document.write(typeof str2+"<br>")
+
+        var res=(str1===str2)
+        document.write(res+"<br>")
+
+        document.write(str1[0]+"<br>")
+        document.write(str1[14]+"<br>")
+
+        var str_len=str1.length
+        document.write(str_len+"<br>")
+
+        var str3 = new String("This is a String")
+        document.write(str3+"<br>")
+        document.write(typeof str3+"<br>")
+
+        var res1=(str1===str3)
+        document.write(res1+"<br>")
+
+        // print string using a loop
+        for(var x=0;x<=str_len-1;x++)
+        {
+        document.write(str1[x]+"<br>")
+        }
+    </script>
+</body>
+</html>

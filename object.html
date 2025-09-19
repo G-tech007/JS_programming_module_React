@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Object</title>
+</head>
+<body>
+    <script>
+        var empDetails={emp_id: 101, emp_name: 'John', emp_email: 'john@gmail.com'}
+        var datatype_empDetails = typeof empDetails
+        document.write(datatype_empDetails+"<br>")
+
+        document.write(empDetails+"<br>")
+        document.write(empDetails.emp_id+"<br>")
+        document.write(empDetails.emp_email+"<br>")
+
+        for (var x in empDetails)
+        {
+            document.write(empDetails[x]+"<br>")
+        }
+    </script>
+</body>
+</html>

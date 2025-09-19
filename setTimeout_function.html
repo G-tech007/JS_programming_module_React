@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Set Time Out Function</title>
+</head>
+<body>
+    <button onclick="finalSample()">Click</button>
+    <button onclick="closeSample()">Close</button>
+    <script>
+        function sample()
+            {
+                window.alert("Example of setTimeout")
+            }
+            var x=setTimeout(sample,2000)
+    //     function finalSample()
+    //         {
+    //             setTimeout(sample,2000)
+    //         }
+            function closeSample()
+                {
+                    clearTimeout(x)
+                }
+    </script>
+</body>
+</html>

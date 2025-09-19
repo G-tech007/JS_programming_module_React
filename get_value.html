@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Get Value</title>
+</head>
+<body>
+    <!-- <input type="text" placeholder="Enter Name" id="txt1">
+    <button onclick="getValue()">Get Value</button>
+    <p id="para"></p> -->
+    <input type="text" placeholder="Enter 1st number" id="text1">
+    <input type="text" placeholder="Enter 2nd number" id="text2">
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="rem()">%</button>
+    <button onclick="expo()">**</button>
+    <p id="para"></p>
+    <script>
+        // function getValue()
+        // {
+        //     var val=document.getElementById("txt1").value
+        //     document.getElementById("para").innerHTML=val
+        // }
+        function add()
+        {
+            var val1=document.getElementById("text1").value
+            var val2=document.getElementById("text2").value 
+            // var res_add=parseInt(val1)+parseInt(val2)
+            var res_add=parseFloat(val1)+parseFloat(val2)
+            document.getElementById("para").innerHTML=res_add
+        }
+        function sub()
+        {
+            var val1=document.getElementById("text1").value
+            var val2=document.getElementById("text2").value 
+            // var res_add=parseInt(val1)+parseInt(val2)
+            var res_sub=parseFloat(val1)-parseFloat(val2)
+            document.getElementById("para").innerHTML=res_sub
+        }
+        function mul()
+        {
+            var val1=document.getElementById("text1").value
+            var val2=document.getElementById("text2").value 
+            // var res_add=parseInt(val1)+parseInt(val2)
+            var res_mul=parseFloat(val1)*parseFloat(val2)
+            document.getElementById("para").innerHTML=res_mul
+        }
+        function div()
+        {
+            var val1=document.getElementById("text1").value
+            var val2=document.getElementById("text2").value 
+            // var res_add=parseInt(val1)+parseInt(val2)
+            var res_div=parseFloat(val1)/parseFloat(val2)
+            document.getElementById("para").innerHTML=res_div
+        }
+        function rem()
+        {
+            var val1=document.getElementById("text1").value
+            var val2=document.getElementById("text2").value 
+            // var res_add=parseInt(val1)+parseInt(val2)
+            var res_rem=parseFloat(val1)%parseFloat(val2)
+            document.getElementById("para").innerHTML=res_rem
+        }
+        function expo()
+        {
+            var val1=document.getElementById("text1").value
+            var val2=document.getElementById("text2").value 
+            // var res_add=parseInt(val1)+parseInt(val2)
+            var res_expo=parseFloat(val1)**parseFloat(val2)
+            document.getElementById("para").innerHTML=res_expo
+        }
+    </script>
+</body>
+</html>

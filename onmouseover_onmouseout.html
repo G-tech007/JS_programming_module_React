@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Onmouseover_Onmouseout</title>
+</head>
+<body>
+    <img src="/India.jpg" alt="" width="400px" height="200" id="img1" onmouseover="sample_in()" onmouseout="sample_out()">
+
+    <script>
+        function sample_in()
+        {
+            document.getElementById("img1").src="/usa.png"
+        }
+        function sample_out()
+        {
+            document.getElementById("img1").src="/India.jpg"
+        }
+    </script>
+</body>
+</html>

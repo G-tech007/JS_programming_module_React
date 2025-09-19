@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Date Function</title>
+</head>
+<body>
+    <script>
+        var d=new Date()
+        document.write(d+"<br>")
+
+        var dis_date=d.getDate()
+        document.write(dis_date+"<br>")
+
+        var dis_month=d.getMonth()
+        document.write((dis_month+1)+"<br>")
+
+        var monthNames=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+        document.write(monthNames+"<br>")
+
+        var res=monthNames[d.getMonth()]
+        document.write(res+"<br>")
+
+        var res1=d.getFullYear()
+        document.write(res1+"<br>")
+
+        var res2=d.getHours()
+        document.write(res2+"<br>")
+
+        var res3=d.getMinutes()
+        document.write(res3+"<br>")
+
+        var res4=d.getSeconds()
+        document.write(res4+"<br>")
+
+        var x=d.toLocaleString([],{
+            hour:"2-digit",
+            minute:"2-digit",
+        })
+        document.write(x+"<br>")
+
+        var dis_day=d.getDay()
+        document.write(dis_day+"<br>")
+
+        var dis_date1=d.toLocaleDateString()
+        document.write(dis_date1+"<br>")
+
+        var my_date_format=res1+"."+(dis_month+1)+"."+dis_date
+        document.write(my_date_format+"<br>")
+
+        var dis_time_new=d.toLocaleTimeString()
+        document.write(dis_time_new+"<br>")
+    </script>
+</body>
+</html>

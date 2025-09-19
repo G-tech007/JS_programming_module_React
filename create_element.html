@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Create Element</title>
+</head>
+<body>
+    <button onclick="sample_createElement()" id="btn">Click</button>
+    <br>
+    <span>Span Tag</span>
+    <script>
+        function sample_createElement()
+        {
+            var p_ele=document.createElement("p")
+            p_ele.innerHTML="Paragraph"
+            p_ele.setAttribute("align","center")
+            p_ele.setAttribute("class","test")
+            // document.body.prepend(p_ele)
+            // document.body.append(p_ele)
+            var btn_ele=document.getElementById("btn")
+            btn_ele.after(p_ele)
+            // btn_ele.before(p_ele)
+        }
+    </script>
+</body>
+</html>
